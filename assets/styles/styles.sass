@@ -1,0 +1,238 @@
+/* 1.Header */
+
+// Color Variables
+$MAIN_COLOR:#64ac8f 
+$MAIN_BRIGHTER:#94d6ba
+$PRIMARY_COLOR:#e7f5dc
+$BG_COLOR:#B4D3C5
+$BG_BRIGHTER:#D9E9E2
+$WHITE:#fff
+
+// Fonts Variables
+$FONT: 'Roboto Slab'
+
+.header
+	margin: 0
+	padding: 0
+	width: 100%
+	
+	background-color: $BG_COLOR	
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	z-index: 1000
+
+.container
+	width: 100%
+	max-width: 70% 
+	margin: 0 auto
+
+
+.header_inner 
+	display: flex
+	align-items: center
+	justify-content: space-between
+	height: 57.5px
+
+.logo 
+	font-size: 28px
+	font-family: $FONT, sans-serif
+	color: $MAIN_COLOR
+/* 2.Nav */
+
+.nav 
+	margin: 0
+	padding: 0
+	list-style-type: none
+	&_link
+		padding: 20px
+		padding: 20px
+		text-decoration: none
+		color: white
+		transition: color 0.4s linear
+		display: inline-block
+		vertical-align: top
+		transition: color 0.4s linear, background 0.4s linear, border 0.4s linear
+		&:hover
+			color: $MAIN_COLOR
+			text-decoration: linear
+			background-color: white
+		&:active
+			color: $WHITE
+			background-color: $MAIN_COLOR
+/* 3.Main */
+
+/*1.First_list Main*/
+
+.first_list 
+	width: 100%
+	height: 100vh
+	background-size: cover
+	display: flex
+	flex-wrap: nowrap 
+	flex-direction: column
+	justify-content: center
+	/*background: url("../images/barber_head.jpg") center no-repeat*/
+
+
+.title 
+	width: 100%
+	max-width: 880px
+	margin: auto
+	z-index: 1
+	text-align: center
+
+
+.head_title
+	font-size: 72px
+	color: $MAIN_BRIGHTER
+	margin: 0
+	padding: 0
+
+
+.head_title_two 
+	margin: 20px auto 100px
+	font-size: 60px
+	color: $MAIN_COLOR
+
+
+.head_title_two::after 
+	content: ""
+	display: block
+	width: 100%
+	height: 3px
+	background-color: $PRIMARY_COLOR
+	margin: 40px auto
+
+
+.button_link 
+	padding: 20px
+	background-color: $PRIMARY_COLOR
+	color: white
+	font-size: 30px
+	font-family: $FONT, sans serif
+	text-transform: uppercase
+	text-decoration: none
+	transition: color 0.4s linear, background 0.4s linear, border 0.4s linear
+
+
+.button_link:hover 
+	background-color: $MAIN_COLOR
+	color: #FFF
+	text-decoration: linear
+
+
+/* 2.second_list About us*/
+
+.second_list 
+	width: 100%
+	height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: center
+	.text_container_about_us 
+		width: 613px
+		height: 570px
+		background-color: $BG_BRIGHTER
+		margin: auto
+		display: flex
+		flex-direction: column
+		justify-content: spase-around
+		.text_about_us 
+			padding: 0 60px
+			margin: auto
+			text-align: center
+
+/*Section*/
+.headers_text 
+	color: $MAIN_BRIGHTER
+	font-size: 46px
+	font-family: $FONT, sans-serif
+	text-transform: uppercase
+
+
+.headers_container 
+	display: flex
+	justify-content: center
+
+
+.headers_text::after 
+	content: ""
+	display: block
+	height: 5px
+	width: 90px
+	background-color: $PRIMARY_COLOR
+	z-index: 1
+	margin: 30px auto 0
+
+.section 
+	padding:80px 0
+	.section_inner 
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		.section_item 
+			max-height: 370px
+			margin: 0 10px 10px
+			background-color: $BG_BRIGHTER
+			.section_img
+				max-width: 250px
+				max-height: 150px
+				margin-bottom: 0
+				padding-bottom: 0
+				&:hover
+					opacity: 0.7
+					cursor: pointer
+			
+			.section_header 
+				max-width: 375px
+				margin: 0
+				padding: 20px
+				text-align: center
+
+
+			.section_texts 
+				max-width: 375px
+				margin: 0
+				padding: 15px
+				padding-bottom: 70px
+				text-align: center	
+/*Galary*/
+
+.section_galary 
+	margin: 5px 5px 0
+
+
+.inst 
+	text-align: center
+	margin: 0
+	padding: 0
+	padding-top: 12px
+	padding-right: 5px
+
+.fab 
+	font-size: 40px
+	text-decoration: none
+	padding: 0 3px
+	margin: 0
+
+.text_galary 
+	display: flex
+	justify-content: center
+	margin-top: 20px
+
+/* 4.Footer */
+
+/* 5.Helpers */
+
+*, *:before, *:after
+	box-sizing: border-box 
+
+body  
+	margin: 0
+	padding: 0
+	font-size: 15px
+	font-family: $FONT, sans-serif
+	font-weight: 300 
+
