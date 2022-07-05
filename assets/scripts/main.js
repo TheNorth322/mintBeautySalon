@@ -3,7 +3,7 @@ const navbar = document.querySelector('.nav');
 const scrollspy = VanillaScrollspy(navbar, 1000, 'easeInOutQuint');
 scrollspy.init();
 
-$('.section_inner').slick({
+$('.galary_section').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,
