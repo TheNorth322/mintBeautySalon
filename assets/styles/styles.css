@@ -23,20 +23,25 @@
   justify-content: space-between;
   height: 57.5px;
 }
+
 .header_inner .logo {
   font-size: 28px;
   font-family: "Roboto Slab", sans-serif;
   color: #fff;
 }
+
 .header_inner .logo_link {
   text-decoration: none;
 }
+
 .header_inner .logo_link:link {
   color: #fff;
 }
+
 .header_inner .logo_link:visited {
   color: #fff;
 }
+
 .header_inner .logo_link:hover {
   color: #e7f5dc;
   cursor: pointer;
@@ -49,6 +54,7 @@
   padding: 0;
   list-style-type: none;
 }
+
 .nav_link {
   padding: 20px;
   padding: 20px;
@@ -59,11 +65,13 @@
   vertical-align: top;
   transition: color 0.4s linear, background 0.4s linear, border 0.4s linear;
 }
+
 .nav_link:hover {
   color: #64ac8f;
   text-decoration: linear;
   background-color: #fff;
 }
+
 .nav_link:active {
   color: #fff;
   background-color: #64ac8f;
@@ -81,6 +89,7 @@
   justify-content: center;
   /*background: url("../images/barber_head.jpg") center no-repeat*/
 }
+
 .first_list .title {
   width: 100%;
   max-width: 880px;
@@ -88,17 +97,21 @@
   z-index: 1;
   text-align: center;
 }
+
 .first_list .title .head_title {
   font-size: 72px;
   color: #64ac8f;
   margin: 0;
+  margin-bottom: 100px;
   padding: 0;
 }
+
 .first_list .title .head_title_two {
   margin: 20px auto 100px;
   font-size: 60px;
   color: #64ac8f;
 }
+
 .first_list .title .head_title_two::after {
   content: "";
   display: block;
@@ -107,6 +120,7 @@
   background-color: #e7f5dc;
   margin: 40px auto;
 }
+
 .first_list .title .button_link {
   padding: 20px;
   background-color: #94d6ba;
@@ -117,6 +131,7 @@
   text-decoration: none;
   transition: color 0.4s linear, background 0.4s linear, border 0.4s linear;
 }
+
 .first_list .title .button_link:hover {
   background-color: #64ac8f;
   color: #fff;
@@ -131,6 +146,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .second_list .text_container_about_us {
   width: 613px;
   height: 570px;
@@ -140,6 +156,7 @@
   flex-direction: column;
   justify-content: spase-around;
 }
+
 .second_list .text_container_about_us .text_about_us {
   padding: 0 60px;
   margin: auto;
@@ -153,6 +170,7 @@
   font-family: "Roboto Slab", sans-serif;
   text-transform: uppercase;
 }
+
 .headers_text::after {
   content: "";
   display: block;
@@ -171,32 +189,38 @@
 .section {
   padding: 80px 0;
 }
+
 .section .section_inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .section .section_inner .section_item {
   max-height: 370px;
   margin: 0 10px 10px;
   background-color: #D9E9E2;
 }
+
 .section .section_inner .section_item .section_img {
   max-width: 250px;
   max-height: 150px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
 .section .section_inner .section_item .section_img:hover {
   opacity: 0.7;
   cursor: pointer;
 }
+
 .section .section_inner .section_item .section_header {
   max-width: 375px;
   margin: 0;
   padding: 20px;
   text-align: center;
 }
+
 .section .section_inner .section_item .section_texts {
   max-width: 375px;
   margin: 0;
@@ -244,5 +268,3 @@ body {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
 }
-
-/*# sourceMappingURL=styles.css.map */
