@@ -88,7 +88,7 @@ $FONT: 'Roboto Slab'
 	display: flex
 	flex-wrap: nowrap
 	flex-direction: column
-	justify-content: center
+	justify-content: space-around
 	/*background: url("../images/barber_head.jpg") center no-repeat*/
 	.title
 		width: 100%
@@ -116,22 +116,25 @@ $FONT: 'Roboto Slab'
 				height: 3px
 				background-color: $PRIMARY_COLOR
 				margin: 40px auto
+		.sign_up_button_container
+			border: 10px
+			border-color: #000
+			background-color: #0000ff
 
-		.button_link
-			padding: 20px
-			background-color: $MAIN_BRIGHTER
-			color: $TEXT_COLOR
-			font-size: 30px
-			font-family: $FONT, sans serif
-			text-transform: uppercase
-			text-decoration: none
-			transition: color 0.4s linear, background 0.4s linear, border 0.4s linear
-
-			&:hover
-				background-color: $MAIN_COLOR
+			.button_link
+				padding: 20px
+				background-color: $MAIN_BRIGHTER
 				color: $TEXT_COLOR
-				text-decoration: linear
+				font-size: 30px
+				font-family: $FONT, sans serif
+				text-transform: uppercase
+				text-decoration: none
+				transition: color 0.4s linear, background 0.4s linear, border 0.4s linear
 
+				&:hover
+					background-color: $MAIN_COLOR
+					color: $TEXT_COLOR
+					text-decoration: linear
 /* 2.second_list About us*/
 
 .second_list
