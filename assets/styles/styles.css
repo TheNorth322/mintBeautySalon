@@ -23,11 +23,24 @@
   justify-content: space-between;
   height: 57.5px;
 }
-
-.logo {
+.header_inner .logo {
   font-size: 28px;
   font-family: "Roboto Slab", sans-serif;
-  color: #64ac8f;
+  color: #fff;
+}
+.header_inner .logo_link {
+  text-decoration: none;
+}
+.header_inner .logo_link:link {
+  color: #fff;
+}
+.header_inner .logo_link:visited {
+  color: #fff;
+}
+.header_inner .logo_link:hover {
+  color: #e7f5dc;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 /* 2.Nav */
@@ -40,7 +53,7 @@
   padding: 20px;
   padding: 20px;
   text-decoration: none;
-  color: white;
+  color: #fff;
   transition: color 0.4s linear;
   display: inline-block;
   vertical-align: top;
@@ -49,7 +62,7 @@
 .nav_link:hover {
   color: #64ac8f;
   text-decoration: linear;
-  background-color: white;
+  background-color: #fff;
 }
 .nav_link:active {
   color: #fff;
@@ -68,29 +81,25 @@
   justify-content: center;
   /*background: url("../images/barber_head.jpg") center no-repeat*/
 }
-
-.title {
+.first_list .title {
   width: 100%;
   max-width: 880px;
   margin: auto;
   z-index: 1;
   text-align: center;
 }
-
-.head_title {
+.first_list .title .head_title {
   font-size: 72px;
-  color: #94d6ba;
+  color: #64ac8f;
   margin: 0;
   padding: 0;
 }
-
-.head_title_two {
+.first_list .title .head_title_two {
   margin: 20px auto 100px;
   font-size: 60px;
   color: #64ac8f;
 }
-
-.head_title_two::after {
+.first_list .title .head_title_two::after {
   content: "";
   display: block;
   width: 100%;
@@ -98,21 +107,19 @@
   background-color: #e7f5dc;
   margin: 40px auto;
 }
-
-.button_link {
+.first_list .title .button_link {
   padding: 20px;
-  background-color: #e7f5dc;
-  color: white;
+  background-color: #94d6ba;
+  color: #fff;
   font-size: 30px;
   font-family: "Roboto Slab", sans serif;
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.4s linear, background 0.4s linear, border 0.4s linear;
 }
-
-.button_link:hover {
+.first_list .title .button_link:hover {
   background-color: #64ac8f;
-  color: #FFF;
+  color: #fff;
   text-decoration: linear;
 }
 
@@ -146,12 +153,6 @@
   font-family: "Roboto Slab", sans-serif;
   text-transform: uppercase;
 }
-
-.headers_container {
-  display: flex;
-  justify-content: center;
-}
-
 .headers_text::after {
   content: "";
   display: block;
@@ -160,6 +161,11 @@
   background-color: #e7f5dc;
   z-index: 1;
   margin: 30px auto 0;
+}
+
+.headers_container {
+  display: flex;
+  justify-content: center;
 }
 
 .section {

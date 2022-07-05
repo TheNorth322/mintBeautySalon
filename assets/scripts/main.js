@@ -1,3 +1,31 @@
-document.getElementById(class_='section_item').onclick = function(){
-    console.log('Good news');
-}
+new WOW().init();
+const navbar = document.querySelector('.nav');
+const scrollspy = VanillaScrollspy(navbar, 1000, 'easeInOutQuint');
+scrollspy.init();
+
+$('.section_inner').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
