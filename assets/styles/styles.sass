@@ -33,7 +33,6 @@ $FONT: 'Roboto Slab'
 	align-items: center
 	justify-content: space-between
 	height: 57.5px
-
 	.logo
 		font-size: 28px
 		font-family: $FONT, sans-serif
@@ -42,12 +41,9 @@ $FONT: 'Roboto Slab'
 		&_link
 			text-decoration: none
 
-			&:link
+			&:link, &:visited
 				color: $TEXT_COLOR
-
-			&:visited
-				color: $TEXT_COLOR
-
+			
 			&:hover
 				color: $PRIMARY_COLOR
 				cursor: pointer
@@ -83,26 +79,43 @@ $FONT: 'Roboto Slab'
 
 .first_list
 	width: 100%
-	height: 100vh
+	height: 90vh
 	background-size: cover
 	display: flex
 	flex-wrap: nowrap
 	flex-direction: column
 	justify-content: space-around
+		
 	/*background: url("../images/barber_head.jpg") center no-repeat*/
+	&_down_arrow i
+		padding-top: 35%
+		font-size: 40px
+		color: $MAIN_COLOR
+
+		&:active, &:visited
+			color: $MAIN_COLOR
+		
+		&:hover
+			opacity: 0.7
+
 	.title
 		width: 100%
 		max-width: 880px
-		margin: auto
+		margin: 0 auto
 		z-index: 1
 		text-align: center
-
+		display: flex
+		flex-wrap: nowrap
+		flex-direction: column
+		justify-content: space-around
+	
 		.head_title
 			font-size: 72px
 			color: $MAIN_COLOR
 			margin: 0
 			margin-bottom: 100px
 			padding: 0
+			padding-top: 35%
 
 		.head_title_two
 			margin: 20px auto 100px
@@ -116,10 +129,10 @@ $FONT: 'Roboto Slab'
 				height: 3px
 				background-color: $PRIMARY_COLOR
 				margin: 40px auto
+		
 		.sign_up_button_container
 			border: 10px
 			border-color: #000
-			background-color: #0000ff
 
 			.button_link
 				padding: 20px
@@ -135,6 +148,7 @@ $FONT: 'Roboto Slab'
 					background-color: $MAIN_COLOR
 					color: $TEXT_COLOR
 					text-decoration: linear
+
 /* 2.second_list About us*/
 
 .second_list
@@ -216,7 +230,7 @@ $FONT: 'Roboto Slab'
 
 .section_galary
 	margin: 5px 5px 0
-
+	background-color: $BG_BRIGHTER
 .inst
 	text-align: center
 	margin: 0
