@@ -204,12 +204,14 @@
   max-height: 370px;
   margin: 0 10px 10px;
   background-color: #D9E9E2;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .section .section_inner .section_item .section_img {
   max-width: 250px;
   max-height: 150px;
-  margin-bottom: 0;
+  margin: 0;
   padding-bottom: 0;
 }
 
