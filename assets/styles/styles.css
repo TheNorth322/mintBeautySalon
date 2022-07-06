@@ -70,7 +70,7 @@
 /*1.First_list Main*/
 .first_list {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   display: flex;
   flex-wrap: nowrap;
@@ -79,7 +79,7 @@
   /*background: url("../images/barber_head.jpg") center no-repeat*/
 }
 .first_list_down_arrow i {
-  padding-top: 35%;
+  padding-top: 30%;
   font-size: 40px;
   color: #64ac8f;
 }
@@ -142,26 +142,38 @@
 }
 
 /* 2.second_list About us*/
-.second_list {
+.about_us {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.second_list .text_container_about_us {
-  width: 613px;
-  height: 570px;
+.about_us .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.about_us .wrapper .about_us_image {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.about_us .text_about_us {
+  max-width: 613px;
+  min-height: 570px;
   background-color: #D9E9E2;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: spase-around;
-}
-.second_list .text_container_about_us .text_about_us {
-  padding: 0 60px;
-  margin: auto;
+  justify-content: space-around;
+  padding: 30px;
   text-align: center;
+}
+.about_us .text_about_us h2 {
+  margin: 0;
+}
+.about_us .text_about_us h2::after {
+  background-color: #fff;
 }
 
 /*Section*/
@@ -178,7 +190,7 @@
   width: 90px;
   background-color: #e7f5dc;
   z-index: 1;
-  margin: 30px auto 0;
+  margin: 15px auto;
 }
 
 .headers_container {
@@ -186,9 +198,6 @@
   justify-content: center;
 }
 
-.section {
-  padding: 80px 0;
-}
 .section .section_inner {
   display: flex;
   flex-wrap: wrap;
@@ -223,7 +232,6 @@
   text-align: center;
 }
 
-/*Galary*/
 .section_galary {
   margin: 5px 5px 0;
   background-color: #D9E9E2;
