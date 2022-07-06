@@ -13,17 +13,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
 
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css">	
+	
 	<link rel="stylesheet" type="text/css" href="assets/styles/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/styles/slick-theme.css"/>
 	<script src="assets/scripts/jquery-3.6.0.slim.min.js"></script>
-	<script src="https://kit.fontawesome.com/efcda0d6f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <!--1.Header-->
 
-	<header class="header">
+	<header class="header wow animate__fadeInDown animate__animated" data-wow-delay="0.77s">
 		<div class="container">
 			<div class="header_inner">
 				<div class="logo"><a href="#first_list" class="logo_link">Мята Style</a></div>
@@ -32,7 +33,7 @@
 				<nav class="nav">
 					<a class="nav_link" href="#first_list">Главная</a>
 					<a class="nav_link" href="#second_list">О нас</a>
-					<a class="nav_link" href="#price">Услуги и цены</a>
+					<a class="nav_link" href="#price">Услуги</a>
 					<!--a class="nav_link" href="">Акции</a-->
 					<a class="nav_link" href="#galary">Галерея</a>
 					<a class="nav_link" href="#sign up">Контакты</a>
@@ -46,11 +47,15 @@
 	<div class="first_list" id="first_list">
 		<div class="container">
 			<div class="title">
-				 <div><h1 class="head_title">Мята Style</h1></div>
-				<div class ="sign_up_button_container"><a class="button_link" href="#">Записаться</a></div>
-			</div>
+				<h1 class="head_title wow animate__fadeInLeft animate__animated" data-wow-delay="0.33s">Мята Style</h1>
+				<div class ="sign_up_button_container wow animate__fadeInLeft animate__animated" data-wow-delay="0.66s"><a class="button_link" href="#">Записаться</a></div>
+				<div class="first_list_down_arrow wow animate__fadeInUp animate__animated" data-wow-delay="1s">
+					<a href="#second_list"><i class="fa-solid fa-circle-arrow-down"></i></a>
+				</div>
+			</div>				
 		</div>
 	</div>
+
 
 <!--about us-->
 
@@ -166,5 +171,8 @@
 	<script src="assets/scripts/vanillajs-scrollspy.min.js"></script>
 	<script src="assets/scripts/wow.min.js"></script>	
 	<script src="assets/scripts/main.js"></script>
+	<script> 
+		
+	</script>
 </body>
 </html>	
