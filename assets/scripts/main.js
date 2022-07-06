@@ -11,7 +11,7 @@ const arrow = document.querySelector('.first_list_down_arrow')
 const arrow_scroll = VanillaScrollspy(arrow, 1000, 'easeInOutQuint')
 arrow_scroll.init()
 
-$('.galary_section').slick({
+$('.galary_carousel').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,
