@@ -78,15 +78,17 @@
   justify-content: space-around;
   /*background: url("../images/barber_head.jpg") center no-repeat*/
 }
-.first_list_down_arrow i {
+.first_list_down_arrow {
   padding-top: 35%;
+}
+.first_list_down_arrow .arrow_link {
   font-size: 40px;
   color: #64ac8f;
 }
-.first_list_down_arrow i:active, .first_list_down_arrow i:visited {
+.first_list_down_arrow .arrow_link:active, .first_list_down_arrow .arrow_link:visited {
   color: #64ac8f;
 }
-.first_list_down_arrow i:hover {
+.first_list_down_arrow .arrow_link:hover {
   opacity: 0.7;
 }
 .first_list .title {
@@ -127,7 +129,7 @@
 }
 .first_list .title .sign_up_button_container .button_link {
   padding: 20px;
-  background-color: #94d6ba;
+  background-color: #B4D3C5;
   color: #fff;
   font-size: 30px;
   font-family: "Roboto Slab", sans serif;
@@ -142,24 +144,22 @@
 }
 
 /* 2.second_list About us*/
-.second_list {
+.about_us {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.second_list .text_container_about_us {
-  width: 613px;
-  height: 570px;
+.about_us .text_about_us {
+  max-width: 613px;
+  min-height: 570px;
   background-color: #D9E9E2;
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: spase-around;
-}
-.second_list .text_container_about_us .text_about_us {
-  padding: 0 60px;
+  justify-content: space-around;
+  padding: 30px 60px;
   margin: auto;
   text-align: center;
 }

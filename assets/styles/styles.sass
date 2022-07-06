@@ -87,16 +87,18 @@ $FONT: 'Roboto Slab'
 	justify-content: space-around
 		
 	/*background: url("../images/barber_head.jpg") center no-repeat*/
-	&_down_arrow i
+	&_down_arrow
 		padding-top: 35%
-		font-size: 40px
-		color: $MAIN_COLOR
-
-		&:active, &:visited
-			color: $MAIN_COLOR
 		
-		&:hover
-			opacity: 0.7
+		.arrow_link
+			font-size: 40px
+			color: $MAIN_COLOR
+
+			&:active, &:visited
+				color: $MAIN_COLOR
+		
+			&:hover
+				opacity: 0.7
 
 	.title
 		width: 100%
@@ -136,7 +138,7 @@ $FONT: 'Roboto Slab'
 
 			.button_link
 				padding: 20px
-				background-color: $MAIN_BRIGHTER
+				background-color: $BG_COLOR
 				color: $TEXT_COLOR
 				font-size: 30px
 				font-family: $FONT, sans serif
@@ -151,26 +153,23 @@ $FONT: 'Roboto Slab'
 
 /* 2.second_list About us*/
 
-.second_list
+.about_us
 	width: 100%
 	height: 100vh
 	display: flex
 	flex-direction: column
 	justify-content: center
-
-	.text_container_about_us
-		width: 613px
-		height: 570px
+	.text_about_us
+		max-width: 613px
+		min-height: 570px
 		background-color: $BG_BRIGHTER
 		margin: auto
 		display: flex
 		flex-direction: column
-		justify-content: spase-around
-
-		.text_about_us
-			padding: 0 60px
-			margin: auto
-			text-align: center
+		justify-content: space-around
+		padding: 30px 60px
+		margin: auto
+		text-align: center
 
 /*Section*/
 .headers_text
