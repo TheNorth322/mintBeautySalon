@@ -77,9 +77,6 @@
   justify-content: space-around;
   /*background: url("../images/barber_head.jpg") center no-repeat*/
 }
-.first_list_down_arrow {
-  padding-top: 35%;
-}
 .first_list_down_arrow .arrow_link {
   font-size: 40px;
   color: #64ac8f;
@@ -293,7 +290,7 @@
   padding: 20px 0;
   background-color: #B4D3C5;
 }
-.footer .footer_container {
+.footer_container {
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
@@ -301,40 +298,40 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.footer .footer_container .footer_headers {
-  font: .footer .footer_container .footer_headers FONT;
+.footer_headers {
+  font: .footer_headers FONT;
 }
-.footer .footer_container .footer_links {
+.footer_links {
   font-size: 17px;
   padding: 8px;
   margin: 0;
   color: #000;
   transition: color 0.4s linear, background 0.4s linear, border 0.4s linear;
 }
-.footer .footer_container .footer_links:hover {
+.footer_links:hover {
   background-color: #64ac8f;
 }
-.footer .footer_container .footer_links:active {
+.footer_links:active {
   background-color: #fff;
 }
-.footer .footer_container .footer_brand_links {
+.footer_brand_links {
   font-size: 25px;
   padding: 8px;
   margin: 0;
   color: #000;
   transition: color 0.4s linear, background 0.4s linear, border 0.4s linear;
 }
-.footer .footer_container .fa-brands:hover {
+.footer .fa-brands:hover {
   color: #64ac8f;
 }
-.footer .footer_container .footer_informaiton {
+.footer_informaiton {
   display: flex;
   flex-direction: column;
 }
-.footer .footer_container .footer_join_us {
+.footer_join_us {
   display: block;
 }
-.footer .footer_container .footer_contacts {
+.footer_contacts {
   display: flex;
   flex-direction: column;
 }
@@ -356,4 +353,4 @@ a {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=styles.css.map/
+/*# sourceMappingURL=styles.css.map */
