@@ -178,7 +178,7 @@ $FONT: 'Roboto Slab'
 	.text_about_us
 		max-width: 613px
 		min-height: 570px
-		background-color: $BG_BRIGHTER
+		background-color: $BG_COLOR
 		display: flex
 		flex-direction: column
 		justify-content: space-around
@@ -194,7 +194,7 @@ $FONT: 'Roboto Slab'
 				background-color: #fff
 /*Section*/
 .header
-	color: $MAIN_BRIGHTER
+	color: $MAIN_COLOR
 	font-size: 46px
 	font-family: $FONT, sans-serif
 	text-transform: uppercase
@@ -225,7 +225,7 @@ $FONT: 'Roboto Slab'
 			display:flex
 			text-align: center
 			justify-content: center
-
+			margin-top: 60px
 		.services_cards	
 			display: flex
 			flex-wrap: wrap
@@ -291,6 +291,16 @@ $FONT: 'Roboto Slab'
 /* 4.Footer */
 //Contacts, Map
 
+.map_block
+	height: 100vh
+	.map_wrapper
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center		
+		.map_header
+			text-align: center
+			margin-top: 7vh
 .footer
 	padding: 20px 0
 	background-color: $BG_COLOR
@@ -304,7 +314,9 @@ $FONT: 'Roboto Slab'
 		flex-wrap: wrap
 
 	&_headers
-		font: &FONT
+		font: $FONT
+		font-weight: 400
+		color: $MAIN_COLOR
 
 	&_links
 		font-size: 17px
@@ -315,9 +327,11 @@ $FONT: 'Roboto Slab'
 
 		&:hover
 			background-color: $MAIN_COLOR
+			color: $TEXT_COLOR
 
 		&:active
 			background-color: $TEXT_COLOR
+			color: $TEXT_COLOR
 
 	&_brand_links
 		font-size: 25px
@@ -328,7 +342,7 @@ $FONT: 'Roboto Slab'
 
 	.fa-brands:hover
 		color: $MAIN_COLOR
-
+		transition: 0.33s
 	&_informaiton
 		display: flex
 		flex-direction: column

@@ -167,7 +167,7 @@
 .about_us .text_about_us {
   max-width: 613px;
   min-height: 570px;
-  background-color: #D9E9E2;
+  background-color: #B4D3C5;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -186,7 +186,7 @@
 
 /*Section*/
 .header {
-  color: #94d6ba;
+  color: #64ac8f;
   font-size: 46px;
   font-family: "Roboto Slab", sans-serif;
   text-transform: uppercase;
@@ -219,6 +219,7 @@
 .services_block .services_wrapper .services_header {
   text-align: center;
   justify-content: center;
+  margin-top: 60px;
 }
 .services_block .services_wrapper .services_cards {
   display: flex;
@@ -286,6 +287,20 @@
 }
 
 /* 4.Footer */
+.map_block {
+  height: 100vh;
+}
+.map_block .map_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.map_block .map_wrapper .map_header {
+  text-align: center;
+  margin-top: 7vh;
+}
+
 .footer {
   padding: 20px 0;
   background-color: #B4D3C5;
@@ -299,7 +314,9 @@
   flex-wrap: wrap;
 }
 .footer_headers {
-  font: .footer_headers FONT;
+  font: "Roboto Slab";
+  font-weight: 400;
+  color: #64ac8f;
 }
 .footer_links {
   font-size: 17px;
@@ -310,9 +327,11 @@
 }
 .footer_links:hover {
   background-color: #64ac8f;
+  color: #fff;
 }
 .footer_links:active {
   background-color: #fff;
+  color: #fff;
 }
 .footer_brand_links {
   font-size: 25px;
@@ -323,6 +342,7 @@
 }
 .footer .fa-brands:hover {
   color: #64ac8f;
+  transition: 0.33s;
 }
 .footer_informaiton {
   display: flex;
