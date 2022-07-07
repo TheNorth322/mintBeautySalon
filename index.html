@@ -20,13 +20,14 @@
 	<link rel="stylesheet" type="text/css" href="assets/styles/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/styles/slick-theme.css"/>
 	<script src="assets/scripts/jquery-3.6.0.slim.min.js"></script>
+	<script src="assets/scripts/popup.js"></script>
 	<!--script src="https://kit.fontawesome.com/efcda0d6f6.js" crossorigin="anonymous"></script-->
 </head>
 <body>
 
 <!--1.Header-->
 
-	<header class="header">
+	<header class="header lock-padding" id="header" >
 		<div class="container">
 			<div class="header_inner">
 				<div class="logo"><a href="#first_list" class="logo_link">Мята Style</a></div>
@@ -50,7 +51,7 @@
 		<div class="container">
 			<div class="title">
 				 <div><h1 class="head_title">Мята Style</h1></div>
-				<div class ="sign_up_button_container"><a class="button_link" href="#">Записаться</a></div>
+				<div class="sing_up_button_container" ><a class="button_link popup_link" href="#popup">Записаться</a></div>
 			</div>
 		</div>
 	</div>
@@ -188,5 +189,15 @@
 	<script src="assets/scripts/vanillajs-scrollspy.min.js"></script>
 	<script src="assets/scripts/wow.min.js"></script>	
 	<script src="assets/scripts/main.js"></script>
+
+	<div class="popup" id="popup">
+		<div class="popup_body">
+			<div class="popup_content">
+				<a class="popup_close close-popup" href="#"><i class="fa-solid fa-xmark fa-2x"></i></a>
+				<div class="popup_title">Записаться</div>
+				<div class="popup_text" > Это текст. Нажмите один раз и выберите</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>	
