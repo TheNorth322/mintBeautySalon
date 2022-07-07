@@ -289,6 +289,56 @@
 }
 
 /* 4.Footer */
+.footer {
+  padding: 20px 0;
+  background-color: #B4D3C5;
+}
+.footer .footer_container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .footer_container .footer_headers {
+  font: .footer .footer_container .footer_headers FONT;
+}
+.footer .footer_container .footer_links {
+  font-size: 17px;
+  padding: 8px;
+  margin: 0;
+  color: #000;
+  transition: color 0.4s linear, background 0.4s linear, border 0.4s linear;
+}
+.footer .footer_container .footer_links:hover {
+  background-color: #64ac8f;
+}
+.footer .footer_container .footer_links:active {
+  background-color: #fff;
+}
+.footer .footer_container .footer_brand_links {
+  font-size: 25px;
+  padding: 8px;
+  margin: 0;
+  color: #000;
+  transition: color 0.4s linear, background 0.4s linear, border 0.4s linear;
+}
+.footer .footer_container .fa-brands:hover {
+  color: #64ac8f;
+}
+.footer .footer_container .footer_informaiton {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer_container .footer_join_us {
+  display: block;
+}
+.footer .footer_container .footer_contacts {
+  display: flex;
+  flex-direction: column;
+}
+
 /* 5.Helpers */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -302,4 +352,8 @@ body {
   font-weight: 300;
 }
 
-/*# sourceMappingURL=styles.css.map */
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map/

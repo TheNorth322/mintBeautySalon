@@ -291,6 +291,56 @@ $FONT: 'Roboto Slab'
 	margin-top: 20px
 
 /* 4.Footer */
+//Contacts, Map
+
+.footer
+	padding: 20px 0
+	background-color: $BG_COLOR
+
+	.footer_container
+		width: 100%
+		max-width: 80%
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		.footer_headers
+			font: &FONT
+
+		.footer_links
+			font-size: 17px
+			padding: 8px
+			margin: 0
+			color: #000
+			transition: color 0.4s linear, background 0.4s linear, border 0.4s linear
+
+			&:hover
+				background-color: $MAIN_COLOR
+
+			&:active
+				background-color: $TEXT_COLOR
+
+		.footer_brand_links
+			font-size: 25px
+			padding: 8px
+			margin: 0
+			color: #000
+			transition: color 0.4s linear, background 0.4s linear, border 0.4s linear
+
+		.fa-brands:hover
+			color: $MAIN_COLOR
+
+		.footer_informaiton
+			display: flex
+			flex-direction: column
+
+		.footer_join_us
+			display: block
+
+		.footer_contacts
+			display: flex
+			flex-direction: column
 
 /* 5.Helpers */
 
@@ -303,3 +353,5 @@ body
 	font-size: 15px
 	font-family: $FONT, sans-serif
 	font-weight: 300
+a
+	text-decoration: none
