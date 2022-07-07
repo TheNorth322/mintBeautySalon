@@ -14,31 +14,30 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
 
 	<link rel="stylesheet" type="text/css" href="assets/styles/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/styles/slick-theme.css"/>
 	<script src="assets/scripts/jquery-3.6.0.slim.min.js"></script>
 	<script src="assets/scripts/popup.js"></script>
-	<!--script src="https://kit.fontawesome.com/efcda0d6f6.js" crossorigin="anonymous"></script-->
+
 </head>
 <body>
 
 <!--1.Header-->
 
-	<header class="header lock-padding" id="header" >
+	<header class="header_block lock-padding wow animate__fadeInDown animate__animated" id="header" data-wow-delay="0.77s">
 		<div class="container">
-			<div class="header_inner">
+			<div class="header_block_wrapper">
 				<div class="logo"><a href="#first_list" class="logo_link">Мята Style</a></div>
 
 <!--2.Nav-->
 				<nav class="nav">
-					<a class="nav_link" href="#first_list">Главная</a>
-					<a class="nav_link" href="#second_list">О нас</a>
-					<a class="nav_link" href="#price">Услуги</a>
-					<!--a class="nav_link" href="">Акции</a-->
+					<a class="nav_link" href="#about_us">О нас</a>
+					<a class="nav_link" href="#services">Услуги</a>
 					<a class="nav_link" href="#galary">Галерея</a>
+					<a class="nav_link" href="#map">Мы на карте</a>
 					<a class="nav_link" href="#contacts">Контакты</a>
 				</nav>
 			</div>
@@ -50,31 +49,36 @@
 	<div class="first_list" id="first_list">
 		<div class="container">
 			<div class="title">
-				 <div><h1 class="head_title">Мята Style</h1></div>
-				<div class="sing_up_button_container" ><a class="button_link popup_link" href="#popup">Записаться</a></div>
-			</div>
+				<h1 class="head_title wow animate__fadeInLeft animate__animated" data-wow-delay="0.33s">Мята Style</h1>
+				<div class ="sign_up_button_container wow animate__fadeInLeft animate__animated" data-wow-delay="0.66s"><a class="button_link popup_link" href="#popup">Записаться</a></div>
+				<div class="first_list_down_arrow wow animate__fadeInUp animate__animated" data-wow-delay="1s">
+					<a href="#about_us" class="arrow_link"><i class="fa-solid fa-circle-arrow-down"></i></a>
+				</div>
+			</div>				
 		</div>
 	</div>
+
 
 <!--about us-->
 
-	<div class="second_list" id="second_list">
+	<div class="about_us" id="about_us">
 		<div class="container">
-			<div class="text_container_about_us">
+			<div class="wrapper wow animate__fadeInLeft animate__animated" data-wow-delay="0.33s">
 				<div class="text_about_us">
-					<h2 class="headers_text">О нас</h2>
-						<p>Таким образом реализация намеченных плановых заданий позволяет оценить значение новых предложений. Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.</p>
-						<p>Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке систем массового участия. Значимость этих проблем настолько очевидна, что консультация с широким активом играет важную роль в формировании новых предложений.</p>
-						<p>Если у вас есть какие то интересные предложения, обращайтесь! Студия Web-Boss всегда готова решить любую задачу. Таким образом реализация намеченных плановых заданий позволяет оценить значение новых предложений. Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке систем массового участия.</p>
+					<h2 class="header">О нас</h2>
+					<p>Таким образом реализация намеченных плановых заданий позволяет оценить значение новых предложений. Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.</p>
+					<p>Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке систем массового участия. Значимость этих проблем настолько очевидна, что консультация с широким активом играет важную роль в формировании новых предложений.</p>
+					<p>Если у вас есть какие то интересные предложения, обращайтесь! Студия Web-Boss всегда готова решить любую задачу. Таким образом реализация намеченных плановых заданий позволяет оценить значение новых предложений. Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке систем массового участия.</p>
 				</div>
+				<img class="about_us_image" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
 			</div>
 		</div>
 	</div>
-
 <!--price-->
 	
-	<section class="section" id="price">
+	<div class="services_block" id="services">
 		<div class="container">
+      <!--
 			<div class="headers_container wow animate__fadeInDown animate__animated" data-wow-delay="1s">
 				<h2 class="headers_text">Услуги</h2>
 			</div>
@@ -104,7 +108,55 @@
 						<img class="section_img" src="assets/images/curly.png">
 						<h2 class="section_header">Химическая завивка</h2>
 						<!--p class="section_texts">Это текст. Нажмите один раз и выберите</p-->
+			-->
+      <div class="services_wrapper">
+				<div class="services_header wow animate__fadeInDown animate__animated" data-wow-delay="1s">
+					<h2 class="header">Услуги</h2>
+				</div>
+
+				<div class="services_cards">
+					<div class="services_card wow animate__fadeInDown animate__animated" data-wow-delay="0.1s">
+						<img class="services_card_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+						<h2 class="services_card_header">Планирование строительства</h2>
+						<span class="services_card_time">~1.5 часа</span>
+						<p class="services_card_text">Это текст. Нажмите один раз и выберите</p>
 					</div>
+				
+					<div class="services_card wow animate__fadeInDown animate__animated" data-wow-delay="0.2s">
+						<img class="services_card_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+						<h2 class="services_card_header">Планирование строительства</h2>
+						<span class="services_card_time">~1.5 часа</span>
+						<p class="services_card_text">Это текст. Нажмите один раз и выберите</p>
+					</div> 
+				
+					<div class="services_card wow animate__fadeInDown animate__animated" data-wow-delay="0.3s">
+						<img class="services_card_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+						<h2 class="services_card_header">Планирование строительства</h2>
+						<span class="services_card_time">~1.5 часа</span>
+						<p class="services_card_text">Это текст. Нажмите один раз и выберите</p>
+					</div>
+				
+					<div class="services_card wow animate__fadeInUp animate__animated" data-wow-delay="0.4s">
+						<img class="services_card_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+						<h2 class="services_card_header">Планирование строительства</h2>
+						<span class="services_card_time">~1.5 часа</span>
+						<p class="services_card_text">Это текст. Нажмите один раз и выберите</p>
+					</div>
+				
+					<div class="services_card wow animate__fadeInUp animate__animated" data-wow-delay="0.5s">
+						<img class="services_card_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+						<h2 class="services_card_header">Планирование строительства</h2>
+						<span class="services_card_time">~1.5 часа</span>
+						<p class="services_card_text">Это текст. Нажмите один раз и выберите</p>
+					</div>
+				
+					<div class="services_card wow animate__fadeInUp animate__animated" data-wow-delay="0.6s">
+						<img class="services_card_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+						<h2 class="services_card_header">Планирование строительства</h2>
+						<span class="services_card_time">~1.5 часа</span>
+						<p class="services_card_text">Это текст. Нажмите один раз и выберите</p>
+					</div>
+          
 					<div class="section_item wow animate__fadeInUp animate__animated" data-wow-delay="0.5s">
 						<img class="section_img" src="assets/images/manicure.png">
 						<h2 class="section_header">Маникюр</h2>
@@ -114,83 +166,89 @@
 				</div>
 			</div> <!--section_item-->
 		</div> <!--container-->
-	</section>
+	</div>
 	
 <!--Galary-->
 
-	<section class="section" id="galary">
+	<div class="galary_block" id="galary">
 		<div class="container">
-			<div class="headers_container">
-				<h2 class="headers_text">Галерея</h2>
-			</div>
-			<div class="section_inner galary_section">
-				<div class="section_galary"> 
-					<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+			<div class="galary_wrapper">
+				<div class="galary_header wow animate__fadeInDown animate__animated" data-wow-delay="0.66s">
+					<h2 class="header">Галерея</h2>
 				</div>
-				<div class="section_galary"> 
-					<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+				<div class="galary_carousel wow animate__fadeInDown animate__animated" data-wow-delay="0.33s">
+					<div class="galary-item"> 
+						<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+					</div>
+					<div class="galary_item"> 
+						<img class="galary_item" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+					</div>
+					<div class="galary_item"> 
+						<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+					</div>
+					<div class="galary_item"> 
+						<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+					</div>
+					<div class="galary_item"> 
+						<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+					</div>
+					<div class="galary_item"> 
+						<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+					</div>
+					<div class="galary_item"> 
+						<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+					</div>
+					<div class="galary_item"> 
+						<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+					</div>
+					<div class="galary_item"> 
+						<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
+					</div>
 				</div>
-				<div class="section_galary"> 
-					<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
-				</div>
-				<div class="section_galary"> 
-					<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
-				</div>
-				<div class="section_galary"> 
-					<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
-				</div>
-				<div class="section_galary"> 
-					<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
-				</div>
-				<div class="section_galary"> 
-					<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
-				</div>
-				<div class="section_galary"> 
-					<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
-				</div>
-				<div class="section_galary"> 
-					<img class="section_img" src="https://static.wixstatic.com/media/c19c76_22d8ec47d1484b09a9c333e4141a12a0.jpg/v1/fill/w_375,h_284,al_c,q_80,usm_0.66_1.00_0.01/c19c76_22d8ec47d1484b09a9c333e4141a12a0.webp">
-				</div>
-			</div>
-			<div class="text_galary">
-				<h3 class="inst">Ещё больше работ в нашем инстаграмм:</h3>
-				<a href="#"><i class="fab fa-instagram"></i></a> 
 			</div>
 		</div> <!--container-->
-	</section>
+	</div>
 	
-<!--Sing up-->
+	<div class="map_block" id="map">
+		<div class="container">
+			<div class="map_wrapper">
+				<div class="map_header wow animate__fadeInDown animate__animated" data-wow-delay="1s">
+					<h2 class="header">Приходи к нам</h2>
+				</div>
+				<div class="map_contents wow animate__fadeInDown animate__animated" data-wow-delay="0.33s">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A43b9bac0a8f8372b7095a48273b8a6666d1c1d875c4f148eafb406fa3a3f2791&amp;source=constructor" width="1280" height="600" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--Footer-->
 	<footer class ="footer" id="contacts">
 		<div class="footer_container">
 			<div class="footer_informaiton">
-				<h1 class="footer_headers">Информация</h1>
-				<a class="footer_links" href="#">Условия использования</a>
-				<a class="footer_links" href="#">Политика конфиденциальности</a>
-				<a class="footer_links" href="#"><i class="fa-solid fa-copyright"></i> 2022 Мята Style</a>
+				<h1 class="footer_headers wow animate__fadeInLeft animate__animated" data-wow-delay="0.25s">Информация</h1>
+				<a class="footer_links wow animate__fadeInLeft animate__animated" data-wow-delay="0.5s" href="#">Условия использования</a>
+				<a class="footer_links wow animate__fadeInLeft animate__animated" data-wow-delay="0.75s" href="#">Политика конфиденциальности</a>
+				<a class="footer_links wow animate__fadeInLeft animate__animated" data-wow-delay="1s" href="#"><i class="fa-solid fa-copyright"></i> 2022 Мята Style</a>
 			</div>
 			<div class="footer_join_us">
-				<h1 class="footer_headers">Присоединяйтесь</h1>
-				<a class="footer_brand_links" href="#"><i class="fa-brands fa-vk fa-2x"></i></a>
-				<a class="footer_brand_links" href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
-				<a class="footer_brand_links" href="#"><i class="fa-brands fa-telegram fa-2x"></i></a>
-				<a class="footer_brand_links" href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>		
+				<h1 class="footer_headers wow animate__fadeInUp animate__animated" data-wow-delay="0.5s">Присоединяйтесь</h1>
+				<a class="footer_brand_links" href="#"><i class="fa-brands fa-vk fa-2x wow animate__fadeInUp animate__animated" data-wow-delay="0.75s"></i></a>
+				<a class="footer_brand_links" href="#"><i class="fa-brands fa-youtube fa-2x wow animate__fadeInUp animate__animated" data-wow-delay="1s"></i></a>
+				<a class="footer_brand_links" href="#"><i class="fa-brands fa-telegram fa-2x wow animate__fadeInUp animate__animated" data-wow-delay="1.25s"></i></a>
+				<a class="footer_brand_links" href="#"><i class="fa-brands fa-instagram fa-2x wow animate__fadeInUp animate__animated" data-wow-delay="1.5s"></i></a>		
 			</div>
 			<div class="footer_contacts">
-				<h1 class="footer_headers">Контакты</h1>
-				<a class="footer_links" href="tel:+71234567899"><i class="fa-solid fa-phone"></i> +7(123)-456-78-99</a>
-				<a class="footer_links" href="#"><i class="fa-solid fa-envelope"></i> info@maill.ru</a>
-				<a class="footer_links" href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
-				<a class="footer_links" href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+				<h1 class="footer_headers wow animate__fadeInRight animate__animated" data-wow-delay="1s">Контакты</h1>
+				<a class="footer_links wow animate__fadeInRight animate__animated" data-wow-delay="1.25s" href="tel:+71234567899"><i class="fa-solid fa-phone"></i> +7(123)-456-78-99</a>
+				<a class="footer_links wow animate__fadeInRight animate__animated" data-wow-delay="1.5s" href="#"><i class="fa-solid fa-envelope"></i> info@maill.ru</a>
+				<a class="footer_links wow animate__fadeInRight animate__animated" data-wow-delay="1.75s" href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
+				<a class="footer_links wow animate__fadeInRight animate__animated" data-wow-delay="2s" href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
 			</div>	
 		</div> 
 	</footer>
-
-	<script type="text/javascript" src="assets/scripts/slick.min.js"></script>
-	<script src="assets/scripts/vanillajs-scrollspy.min.js"></script>
-	<script src="assets/scripts/wow.min.js"></script>	
-	<script src="assets/scripts/main.js"></script>
-
-	<div class="popup" id="popup">
+  
+  <div class="popup" id="popup">
 		<div class="popup_body">
 			<div class="popup_content">
 				<a class="popup_close close-popup" href="#"><i class="fa-solid fa-xmark fa-2x"></i></a>
@@ -199,5 +257,11 @@
 			</div>
 		</div>
 	</div>
+  
+	<script type="text/javascript" src="assets/scripts/slick.min.js"></script>
+	<script src="assets/scripts/vanillajs-scrollspy.min.js"></script>
+	<script src="assets/scripts/wow.min.js"></script>	
+	<script src="assets/scripts/main.js"></script>
+  <link rel="stylesheet" href="assets/styles/slick_slider.css">
 </body>
 </html>	
