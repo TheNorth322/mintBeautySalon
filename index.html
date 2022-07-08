@@ -50,7 +50,7 @@
 		<div class="container">
 			<div class="title">
 				<h1 class="head_title wow animate__fadeInLeft animate__animated" data-wow-delay="0.33s">Мята Style</h1>
-				<div class ="sign_up_button_container wow animate__fadeInLeft animate__animated" data-wow-delay="0.66s"><a class="button_link popup_link" href="#popup">Записаться</a></div>
+				<div class ="sign_up_button_container show_popup wow animate__fadeInLeft animate__animated" rel="popup1" data-wow-delay="0.66s"><a class="button_link show_popup_link">Записаться</a></div>
 				<div class="first_list_down_arrow wow animate__fadeInUp animate__animated" data-wow-delay="1s">
 					<a href="#about_us" class="arrow_link"><i class="fa-solid fa-circle-arrow-down"></i></a>
 				</div>
@@ -58,7 +58,16 @@
 		</div>
 	</div>
 
-
+	<div class="popup_overlay"></div>
+	<div class="popup_contents" id="popup1">
+		<i class="popup_close_button fa-solid fa-xmark"></i>		
+		<div class="popup_header">
+			<h2 class="header">Запишись к нам</h2>
+		</div>
+		<div class="popup_inputs">
+						
+		</div>
+	</div>
 <!--about us-->
 
 	<div class="about_us" id="about_us">
@@ -251,18 +260,7 @@
 				<a class="footer_links wow animate__fadeInRight animate__animated" data-wow-delay="2s" href="#"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
 			</div>	
 		</div> 
-	</footer>
-  
-  <div class="popup" id="popup">
-		<div class="popup_body">
-			<div class="popup_content">
-				<a class="popup_close close-popup" href="#"><i class="fa-solid fa-xmark fa-2x"></i></a>
-				<div class="popup_title">Записаться</div>
-				<div class="popup_text" > Это текст. Нажмите один раз и выберите</div>
-			</div>
-		</div>
-	</div>
-  
+	</footer>  	
 	<script type="text/javascript" src="assets/scripts/slick.min.js"></script>
 	<script src="assets/scripts/vanillajs-scrollspy.min.js"></script>
 	<script src="assets/scripts/wow.min.js"></script>	
