@@ -17,27 +17,38 @@ $('.galary_carousel').slick({
   slidesToShow: 3,
   autoplay: true,
   autoplaySpeed: 2000,
+  arrows: true,
+  dots: true,
+  focusOnSelect: true,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1779,
       settings: {
-        arrows: true,
-        dots: true,
-        centerMode: true,
-        centerPadding: '40px',
+        centerMode: false,
         slidesToShow: 3
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 1606,
       settings: {
-        arrows: true,
-        dots: true,
+        centerMode: false,
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 832,
+      settings: {
         centerMode: true,
-        centerPadding: '40px',
         slidesToShow: 1
       }
-    }
+    },
+    {
+      breakpoint: 687,
+      settings: {
+        centerMode: false,
+        slidesToShow: 1
+      }
+    },
   ]
 });
 
