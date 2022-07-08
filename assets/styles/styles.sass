@@ -434,24 +434,14 @@ $slick-dot-size: 15px
 	overflow-y: auto
 	z-index: 999
 
-.popup
-	display: flex
-	position: fixed
-	top: 0
-	left: 0
-	width: 100%
-	height: 100%
-	display: none
-	justify-content: center
-	align-items: center
-
-.popup_body
-	height: 100%
-	width: 100%
-	display: flex
-	justify-content: center
-	align-items: center
-
+.popup_header h2
+	color: $TEXT_COLOR
+	@media (max-width: 1591px)
+		font-size: 40px
+	@media (max-width: 1396px)
+		font-size: 35px
+	@media (max-width: 353px)
+		font-size: 30px
 .popup_close_button
 	position: absolute
 	top: 15px
@@ -462,6 +452,7 @@ $slick-dot-size: 15px
 	&:hover
 		cursor: pointer
 		color: $TEXT_COLOR
+
 .popup_contents
 	display: flex
 	display: none
@@ -476,6 +467,99 @@ $slick-dot-size: 15px
 	background-color: $BG_COLOR
 	width: 30%
 	z-index: 1000
+	height: 55vh
+	
+	@media (max-width: 1200px)
+		width: 50%
+		left: 25%
+
+	@media (max-width: 706px)
+		width: 70%
+		left: 15%
+	
+	@media (max-width: 530px)
+		width: 90%
+		left: 5%
+	
+	@media (max-width: 414px)
+		width: 95%
+		left: 2.5%
+.popup_inputs
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+.popup_form
+	position: relative
+	width: 20rem
+	height: 3rem
+	margin-top: 1rem
+	&_input
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		border: 2px solid $PRIMARY_COLOR
+		border-radius: 0.5rem
+		font-family: inherit
+		font-size: inherit
+		color: $TEXT_COLOR
+		outline: none
+		padding: 1.25rem
+		background: none
+
+		&:hover
+			border-color: $MAIN_BRIGHTER
+
+		&:focus
+			border-color: $MAIN_COLOR
+		
+	
+	&_label
+		position: absolute
+		left: 1rem
+		top: 0.8rem
+		padding: 0 0.5rem
+		color: $PRIMARY_COLOR
+		cursor: text
+		transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in
+		background-color: $BG_COLOR
+		font-weight: 400
+
+	@media (max-width: 353px)
+		width: 15rem
+
+.popup_form_input:focus ~ .popup_form_label,
+.popup_form_input:not(:placeholder-shown).popup_form_input:not(:focus) ~ .popup_form_label 
+	top: -0.5rem 
+	font-size: 0.8rem 
+	left: 0.8rem 
+	color: $MAIN_COLOR
+
+.popup_form_button
+	margin-top: 5rem
+	.button_link
+		border-radius: 15px
+		padding: 20px
+		border: 2px solid $PRIMARY_COLOR
+		background-color: none
+		color: $TEXT_COLOR
+		font-size: 30px
+		font-family: $FONT, sans serif
+		text-transform: uppercase
+		text-decoration: none
+		transition: color 0.4s linear, background 0.4s linear, border 0.4s linear
+
+		&:hover
+			background-color: $TEXT_COLOR
+			color: $MAIN_COLOR
+			border-color: $MAIN_COLOR
+			text-decoration: linear
+	
+		@media (max-width: 353px)
+			padding: 15px
 
 *, *:before, *:after
 	box-sizing: border-box
