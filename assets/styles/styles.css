@@ -269,8 +269,6 @@
   max-height: 370px;
   margin: 0 5px 10px;
   background-color: #D9E9E2;
-  display: flex;
-  flex-wrap: nowrap;
 }
 .services_block .services_wrapper .services_card_img {
   width: 100%;
@@ -494,7 +492,6 @@
   transition: color 0.4s linear, background 0.4s linear, border 0.4s linear;
   padding: 0 5px;
 }
-
 .popup_close:hover {
   color: #ff0a0a;
   background-color: rgba(0, 0, 0, 0.3);
@@ -504,7 +501,6 @@
   opacity: 1;
   visibility: visible;
 }
-
 .popup.open .popup_content {
   transform: perspective(600px) translate(0px, 0) rotateX(0deg);
   opacity: 1;
@@ -521,10 +517,10 @@ body {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
 }
+
 body, html {
   max-width: 100%;
   overflow-x: hidden;
-
 }
 
 a {
