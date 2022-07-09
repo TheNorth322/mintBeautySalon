@@ -532,6 +532,12 @@
     left: 2.5%;
   }
 }
+@media (max-height: 812px) {
+  .popup_contents {
+    top: 15vh;
+    height: 70vh;
+  }
+}
 
 .popup_inputs {
   display: flex;
@@ -608,7 +614,6 @@
   transition: color 0.4s linear, background 0.4s linear, border 0.4s linear;
 }
 .popup_form_button .button_link:hover {
-  background-color: #fff;
   color: #64ac8f;
   border-color: #64ac8f;
   text-decoration: linear;

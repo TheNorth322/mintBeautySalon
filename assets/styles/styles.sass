@@ -35,6 +35,7 @@ $slick-dot-size: 15px
 		align-items: center
 		justify-content: space-between
 		height: 57.5px
+		
 		.logo
 			font-size: 28px
 			font-family: $FONT, sans-serif
@@ -436,12 +437,16 @@ $slick-dot-size: 15px
 
 .popup_header h2
 	color: $TEXT_COLOR
+	
 	@media (max-width: 1591px)
 		font-size: 40px
+	
 	@media (max-width: 1396px)
 		font-size: 35px
+	
 	@media (max-width: 353px)
 		font-size: 30px
+
 .popup_close_button
 	position: absolute
 	top: 15px
@@ -484,6 +489,11 @@ $slick-dot-size: 15px
 	@media (max-width: 414px)
 		width: 95%
 		left: 2.5%
+
+	@media (max-height: 812px)
+		top: 15vh
+		height: 70vh
+
 .popup_inputs
 	display: flex
 	justify-content: center
@@ -553,7 +563,6 @@ $slick-dot-size: 15px
 		transition: color 0.4s linear, background 0.4s linear, border 0.4s linear
 
 		&:hover
-			background-color: $TEXT_COLOR
 			color: $MAIN_COLOR
 			border-color: $MAIN_COLOR
 			text-decoration: linear
